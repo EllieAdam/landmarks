@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>landmark</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="A parallax scrolling experiment using jQuery" />
+
+		<link rel="stylesheet" media="all" href="css/main.css" />
+
+		<script src="js/modernizr.custom.37797.js"></script> 
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
+		<script src="js/parallax.js"></script>
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			
+			<header id="branding">
+				<h1><a href="index.html">Bike Ride and Landmarks</a> </h1>
+	
+			</header>
+			
+			<nav id="primary">
+				<ul>
+					<li>
+						<h1>Sidney</h1>
+						<a class="manned-flight" href="#manned-flight">View</a>
+					</li>
+					<li>
+						<h1>Holand</h1>
+						<a class="frameless-parachute" href="#frameless-parachute">View</a>
+					</li>
+					<li>
+						<h1>Turkey</h1>
+						<a class="english-channel" href="#english-channel">View</a>
+					</li>
+					<li>
+						<h1>Experiment</h1>
+						<a class="about" href="#about">View</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="content">
+				<article id="manned-flight">
+					<header>
+						<h1>Sidney</h1>
+					</header>
+					<p>Sydney was founded in 1788 when the first fleet arrived in Australia from England. On 13 May 1787 a fleet of 11 ships set sail from Portsmouth, England. On board were 759 convicts, most of them men with sailors and marines to guard the prisoners. With them they took seeds, farm implements, livestock such as cattle, sheep, pigs, goats, horses and chickens and 2 years supply of food. The first colonists came ashore at Port Jackson on 26 January 1788.</p>
+					<nav class="next-prev">
+						<hr />
+						<a class="next frameless-parachute" href="#frameless-parachute">Next</a>
+					</nav>
+				</article>
+				
+				<article id="frameless-parachute">
+					<header>
+						<h1>Holand</h1>
+					</header>
+					<p>Only a small patch on the globe, the Netherlands's role in world history, culture and commerce is out of all proportion to its size. The country owes a lot to its strategic position. Major European rivers like the Rhine pass through the Netherlands into the North Sea, making it a natural centre for business and industry. Since its very early days, over 700 years ago, the City of Amsterdam has occupied a key position in the Dutch scene. Growing from a fishing village in the powerful province of Holland, the city developed into a hub for trade, the arts and politics.</p>
+					<nav class="next-prev">
+						<a class="prev manned-flight" href="#manned-flight">Prev</a>
+						<hr />
+						<a class="next english-channel" href="#english-channel">Next</a>
+					</nav>
+				</article>
+
+
+				
+				<article id="english-channel">
+					<header>
+						<h1>Turkey</h1>
+					</header>
+					<p>Turkish territory along its history has been birthplace of many different cultures and civilizations. Since 6500 B.C. Hattis, Hittites, Phrygians, Urartians, Armenians, Persians, Romans, Seljuks and Ottomans have left important signs of its civilizations through the country, ancient cities, ruins and the cultural heritage that make of Turkey so unique. </p>
+					<nav class="next-prev">
+						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
+						<hr />
+						<a class="next about" href="#about">Next</a>
+					</nav>
+				</article>
+				
+				<article id="about">
+					<header>
+						<h1>Experiment</h1>
+					</header>
+					<p>This is a jQuery parallax scrolling experiment inspiredd by <a href="http://f6design.com/journal/2011/08/06/build-a-parallel-scrolling-website-interface-with-jquery-and-css/">Jonathan Nicol.</a> 
+					<nav class="next-prev">
+						<a class="prev english-channel" href="#english-channel">Prev</a>
+						<hr /></p><p><a href="http://ellieadam.com/">Ellie adam </a>2016</p>
+					</nav>
+				</article>
+			</div>
+			
+			<!-- Parallax foreground -->
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/one.png" width="529" height="757" alt="Montgolfier hot air balloon"/>
+				<img id="bg3-2" src="img/two.png" width="603" height="583" alt="Frameless parachute"/>
+				<img id="bg3-3" src="img/three.png" width="529" height="757" alt="Blanchard's air balloon"/>
+				<img id="bg3-4" src="img/one.png" width="1104" height="1284" alt="Landscape with trees and cows"/>
+			</div>
+			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2">
+				<img id="bg2-1" src="img/clouds.png" alt="cloud"/>
+				<img id="bg2-2" src="img/clouds.png" alt="cloud"/>
+				<img id="bg2-3" src="img/clouds.png" alt="cloud"/>
+				<img id="bg2-4" src="img/clouds.png" alt="cloud"/>
+				<img id="bg2-5" src="img/clouds.png" alt="cloud"/>
+			</div>
+			
+			<!-- Parallax  background clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/clouds.png" alt="cloud"/>
+				<img id="bg1-2" src="img/clouds.png" alt="cloud"/>
+				<img id="bg1-3" src="img/clouds.png" alt="cloud"/>
+				<img id="bg1-4" src="img/clouds.png" alt="cloud"/>
+			</div>
+
+		</div>
+	 
+	</body>
+  
+</html>
